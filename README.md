@@ -52,6 +52,12 @@ It uses a **shared backbone with specialized task heads**, enabling **efficient 
 ```bash
 git clone https://github.com/<your-username>/multi-task-obstacle-detection.git
 cd multi-task-obstacle-detection
+```
 
+### 2. Create Environment
+```bash
+conda create -n obstacle-detection python=3.10 -y
+conda activate obstacle-detection
+```
 
 
