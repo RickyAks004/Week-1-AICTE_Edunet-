@@ -60,4 +60,44 @@ conda create -n obstacle-detection python=3.10 -y
 conda activate obstacle-detection
 ```
 
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+## 🧱 Frameworks used
+
+- PyTorch ≥ 2.0
+- MMDetection / MMSegmentation
+- Ultralytics YOLOv9
+- Albumentations (augmentation)
+- OpenCV, NumPy, Matplotlib
+
+## 🗂️ Dataset Preparation
+```bash
+datasets/
+│
+├── coco/
+├── bdd100k/
+├── lisa/
+└── pothole600/
+```
+
+## ⚙️ Training
+```bash
+python train.py \
+  --backbone convnextv2 \
+  --epochs 100 \
+  --batch-size 16 \
+  --lr 0.001 \
+  --task multi \
+  --weights '' \
+  --img 640
+```
+
+## 🧪 Inference
+```bash
+python detect.py --source path/to/test_images --weights weights/best_model.pt
+```
+
 
