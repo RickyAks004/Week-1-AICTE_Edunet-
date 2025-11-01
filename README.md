@@ -2,7 +2,6 @@
 # 🚘 Multi-Task 2D Obstacle Detection for Autonomous Driving  
 ### Detect Vehicles, Pedestrians, Traffic Lights, Road Signs, Potholes & Speed Breakers — all in one model!
 
-![banner](docs/banner.png) <!-- optional visual banner -->
 
 ---
 
